@@ -11,8 +11,47 @@
     box-sizing: border-box;
 }
 
+
+/* Common */
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+    
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.mt-8px {
+    margin-top: 8px;
+}
+.mt-16px {
+    margin-top: 16px;
+}
+.col {
+    float: left;
+    margin-left: -8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+}
+.col-third {
+    width: 33.333333%;
+}
+
+.col-half {
+    width: 50%;
+}
+.col-full {
+    width: 98%;
+}
+.text-center {
+    text-align: center !important;
+}
 html{
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 .clear {
     clear: both;
@@ -171,13 +210,11 @@ position: relative;
 #content .member-name {
     font-size: 15px;
 }
-#content .member-item {
+/* #content .member-item {
     float: left;
     width: calc(100%/3);
-    text-align: center;
-    
-    
-}
+    text-align: center; 
+} */
 #content .avt {
     margin-top: 15px;
     width: 150px;
@@ -271,6 +308,7 @@ margin-right: -8px; */
 .place-buy-btn:hover    {
     color: #000;
     background-color: #ccc;
+    cursor: pointer;
 }
 
 .footer{
@@ -369,4 +407,71 @@ margin-right: -8px; */
         transform: translateY(0);
 
     }
+}
+/* Contact Form */
+.contact-content {
+margin-top: 48px;
+}
+.contact-info {
+   font-size: 18px; 
+   line-height: 1.5;
+
+}
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+    margin-left: 16px;
+}
+.contact-form {
+    font-size: 15px;    float: right;
+
+}
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.contact-form .form-submit-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    float: right;
+    margin-right: 24px;
+}
+.form-submit-btn:hover {
+    cursor: pointer;
+    background-color: #757575;
+    color: #000;
+}
+.map-section img {
+    width: 100%;
+}
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .socials-list {
+    font-size: 24px;
+}
+#footer .socials-list a {
+    color: #757575;
+    text-decoration: none;
+    
+}
+#footer .socials-list a:hover {
+    color: #a3a3a3;
+    text-decoration: none;
+}
+#footer .copyright {
+    margin-top: 15px;
+    color: #757575;
+}
+#footer .copyright a {
+    margin-top: 15px;
+    color: #757575;
+
+}
+#footer .copyright a:hover {
+    color: #a3a3a3;
 }
